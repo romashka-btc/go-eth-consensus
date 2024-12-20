@@ -40,7 +40,7 @@ func TestPresetMainnet(t *testing.T) {
 		key = strings.Title(key)
 
 		if val, ok := specOut[key]; ok {
-			// avoid uint8 and int comparisions by using the fmt.Sprinot to format
+			// avoid uint8 and int comparisons by using the fmt.Sprinot to format
 			require.Equal(t, fmt.Sprintf("%d", val), fmt.Sprintf("%d", presetVal))
 		}
 	}
