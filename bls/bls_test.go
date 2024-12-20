@@ -119,7 +119,7 @@ func TestBLS_DeserializationG1(t *testing.T) {
 		err := pub.Deserialize(obj.Input.Pubkey)
 
 		if name == "deserialization_succeeds_infinity_with_true_b_flag.json" {
-			// we also fail if point is at inifinity
+			// we also fail if point is at infinity
 			return
 		}
 
